@@ -218,6 +218,8 @@ body {
     background-color: #3477ba00;
     border: none;
     width: 165px;
+    color: #2c71b8;
+    outline: none;
     padding-left: 20px;
     font-size: 21px;
 }
