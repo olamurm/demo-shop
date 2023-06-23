@@ -218,8 +218,6 @@ body {
     background-color: #3477ba00;
     border: none;
     width: 165px;
-    color: #2c71b8;
-    outline: none;
     padding-left: 20px;
     font-size: 21px;
 }
@@ -287,14 +285,80 @@ button {
     justify-content: center;
 }
 
+button {
+    font-family: "Roboto", sans-serif;
+    width: 210px;
+    height: 50px;
+    font-size: 21px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    border: 1px solid white;
+    text-transform: uppercase;
+    background-color: #3477ba;
+}
+
 aside {
-    display: contents;
+    display: flex;
 }
 
 .filter {
-    height: 845px;
     background-color: rgba(255, 255, 255, 0.25);
     border-right: 1px solid white;
+    margin-left: -15px;
+    font-size: 21px;
+}
+
+.filter-block {
+    padding-top: 33px;
+    padding-left: 29px;
+}
+
+.filter-name {
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+}
+
+.filter-checkbox {
+    display: block;
+    margin-bottom: 25px;
+}
+
+.filter-block input[type='checkbox'] {
+    display: none;
+}
+
+.filter-block label {
+    display: block;
+    cursor: pointer;
+    line-height: 21px;
+}
+
+.filter-block label::before {
+    content: "";
+    display: block;
+    width: 10px;
+    height: 10px;
+    border: 1px solid white;
+    margin: 5px 10px 0 0;
+    float: left;
+}
+
+.filter-block input[type='checkbox']:checked+label::before {
+    background-color: white;
+}
+
+.filter a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+}
+
+.filter button {
+    margin: 30px;
 }
 
 .goods {
@@ -483,19 +547,12 @@ aside {
     font-size: 20px;
 }
 
+
+
 .product-spec button {
-    font-family: "Roboto", sans-serif;
-    width: 210px;
-    height: 50px;
-    font-size: 21px;
-    font-weight: bold;
-    color: white;
-    text-align: center;
-    border: 1px solid white;
-    text-transform: uppercase;
-    background-color: #3477ba;
     margin-bottom: 15px;
     margin-left: 15px;
+
 }
 
 .product-spec .cart {
